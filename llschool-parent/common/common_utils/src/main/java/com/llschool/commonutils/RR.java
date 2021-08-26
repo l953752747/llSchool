@@ -26,7 +26,7 @@ public class RR {
     public static RR ok(){
         RR r = new RR();
         r.setSuccess(true);
-        r.setCode(200);
+        r.setCode(ResultCode.SUCCESS);
         r.setMessage("操作成功");
         return r;
     }
@@ -35,8 +35,33 @@ public class RR {
     public static RR error(){
         RR r = new RR();
         r.setSuccess(false);
-        r.setCode(404);
+        r.setCode(ResultCode.ERROR);
         r.setMessage("操作失败");
         return r;
+    }
+
+    public RR success(Boolean success){
+        this.setSuccess(success);
+        return this;
+    }
+
+    public RR message(String message){
+        this.setMessage(message);
+        return this;
+    }
+
+    public RR code(Integer code){
+        this.setCode(code);
+        return this;
+    }
+
+    public RR data(String key, Object value){
+        this.data.put(key, value);
+        return this;
+    }
+
+    public RR data(Map<String, Object> map){
+        this.setData(map);
+        return this;
     }
 }

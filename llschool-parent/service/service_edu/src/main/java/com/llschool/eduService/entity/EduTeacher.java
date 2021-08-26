@@ -42,7 +42,7 @@ public class EduTeacher implements Serializable {
     @ApiModelProperty(value = "讲师资历")
     private String career;
 
-    @ApiModelProperty(value = "讲师ID 1是高级讲师 2是首席讲师")
+    @ApiModelProperty(value = "讲师级别 1是高级讲师 2是首席讲师")
     private Integer level;
 
     @ApiModelProperty(value = "讲师头像")
