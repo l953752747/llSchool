@@ -1,7 +1,6 @@
 package com.llschool.eduService.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.extension.api.R;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.llschool.commonutils.RR;
 import com.llschool.eduService.entity.EduTeacher;
